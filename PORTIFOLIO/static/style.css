@@ -91,14 +91,13 @@ textarea {
 .nurvixHeader {
     color: rgb(228, 227, 226);
     width: 100%;
+    text-shadow: rgb(65, 61, 56)1px 0 10px;;
     font-family: FiraCode;
     text-align: center;
     position: relative;
     top: 148px;
     left: -360px;
-    transform: skew(35deg);
     font-size: 200px;
-    text-shadow:  0 8px 8px rgba(0, 0, 0, 0.1);
 }
 .nurvixHeader:visited{
     color: rgb(228, 227, 226);
@@ -109,6 +108,7 @@ textarea {
     width: 100%;
     padding-top: 20px;
     color: rgb(65, 61, 56);
+    text-shadow: rgb(228, 227, 226) 1px 0 10px;
     font-family: GreatVibes;
     font-weight: 500;
     font-size: 230px;
@@ -122,7 +122,8 @@ textarea {
 .developerHeader{
     width: 100%;
     font-size: 40px;
-    color: rgb(228, 227, 226);
+    color: #44413c;
+    text-shadow: rgb(228, 227, 226) 1px 0 5px;
     font-family: FiraCode;
 	padding-top: 130px;
     
@@ -132,13 +133,14 @@ textarea {
     width: 100%;
     font-size: 50px;
     color: #44413c;
+    text-shadow: rgb(228, 227, 226) 1px 0 5px;
     font-family: FiraCode;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 10%;
-    padding-top: 10%;
+    padding-top: 10%;  
 }
 
 
@@ -458,7 +460,6 @@ textarea {
         flex-direction: column;
         padding-top: 150px;
         gap: 10%;
-        
     }
     .divisionWork{
         flex-direction: column;
