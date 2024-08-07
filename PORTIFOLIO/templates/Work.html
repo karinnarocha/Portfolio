@@ -21,7 +21,7 @@
     </div>
     <!-- TITLE starts -->
     <div class="ExpertiseSession animate-on-scroll">
-      <div class="experienceTitle">MY EXPERTISE</div>
+      <div class="experienceTitle">My Expertise</div>
       <div class="divisionExper">
         <div class="expertisetitle">Back-end Development</div>
         <div class="expertisecontent">
@@ -60,51 +60,55 @@
       </div>
     </div>
     <div class="ImageSession">
-      <div class="experienceTitle">WEB DEVELOPMENT</div>
-      <div class="ImageContainer animate-on-scroll" data-section="nurvix">
-        <img
-          src="../static/uploads/nurvix_page.JPG"
-          alt="NurVIX Page"
-          class="imageWebsite"
-        />
-        <p class="image__overlay hoverOverImages">
-          <span>NurVIX - Full stack </span>
-          <br />
-          Specs: Python (Flask), HTML, CSS <br />Deployed: Godaddy
-          <a href="https://nurvix.live" target="_blank">NurVI X website</a>
-        </p>
-      </div>
-      <div class="ImageContainer animate-on-scroll" data-section="signup">
-        <img
-          src="../static/uploads/Mercy_page.JPG"
-          alt="Sign Up Page"
-          class="imageWebsite"
-        />
-        <p class="image__overlay hoverOverImages">
-          <span>Sign Up Registration - Full Stack</span>
-          <br />
-          <span>Specs: Python(Django), HTML, CSS</span><br />
-          <span>Database: SQLite Built in</span>
-        </p>
-      </div>
-      <div class="ImageContainer animate-on-scroll" data-section="fitness">
-        <img
-          src="../static/uploads/Daniellysfitness.PNG"
-          alt="Fitness Page"
-          class="imageWebsite"
-        />
-        <div class="image__overlay hoverOverImages">
-          <span>Danielly's Fitness - Front end</span>
-          <br />
-          <p>Specs: PHP, HTML, CSS <br />Deployed: Wordpress</p>
-          <a href="https://daniellysfitness.com" target="_blank"
-            >Danielly's Fitness website</a
-          >
+      <div class="experienceTitle">Web Development</div>
+      <div class="flexweb">
+        <div class="divisionTemplates ">
+          <img
+            src="../static/uploads/nurvixLaptop.png"
+            alt="NurVIX Page"
+            class="imageWebsiteLeft animated-textOpposite"
+          />
+          <div class="descriptionswebsites fadein">
+            <span class="project-title">NurVIX - Full stack</span>
+            <br />
+            <span class="project-details">
+              Specs: Python (Flask), HTML, CSS <br />
+              Deployed: Godaddy
+              <a href="https://nurvix.live" target="_blank">NurVI X website</a>
+            </span>
+          </div>
+        </div> 
+        <div class="divisionTemplates opositflex">
+          <div class="descriptionswebsites fadein">
+            <span>Danielly's Fitness - Front end</span>
+            <br />
+            <p>Specs: PHP, HTML, CSS <br />Deployed: Wordpress</p>
+          </div>
+          <img
+            src="../static/uploads/daniellyLaptop.png"
+            alt="Fitness Page"
+            class="imageWebsiteRight  slideRight"
+          />
+        </div>
+        <div class="divisionTemplates">
+          <img
+            src="../static/uploads/Mercy Laptop.png"
+            alt="Sign Up Page"
+            class="imageWebsiteLeft animated-textOpposite"
+          />
+          <div class="descriptionswebsites fadein">
+            <p>
+              <span>Sign Up Registration - Full Stack</span>
+              <br />
+              <span>Specs: Python(Django), HTML, CSS</span><br />
+              <span>Database: SQLite Built in</span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
     <div class="mobileappSession animate-on-scroll" data-section="aibeans">
-      <div class="experienceTitle">MOBILE APPLICATION</div>
+      <div class="experienceTitle">Mobile Application</div>
       <div class="AppSession">
         <video class="VideoAIBeans" loop autoplay muted>
           <source src="../static/uploads/AIBEANS.mov" type="video/mp4" />
@@ -125,7 +129,7 @@
       </div>
     </div>
     <div class="PhotographySession animate-on-scroll" data-section="jiujitsu">
-      <div class="experienceTitle">PHOTOGRAPHY</div>
+      <div class="experienceTitle">Photography</div>
       <div class="photographygalery">Coming soon!</div>
     </div>
   </body>
@@ -143,12 +147,11 @@
         const windowHeight = window.innerHeight;
 
         if (elementTop >= 0 && elementTop <= windowHeight) {
-          // Calculate the ratio of the element visible in the viewport
           const visibility = Math.min((windowHeight - elementTop) / elementHeight, 1);
           element.style.opacity = visibility;
         } else if (elementTop < 0) {
           // When scrolling past the element
-          const visibility = Math.max(1 - Math.abs(elementTop) / elementHeight, 0);
+          const visibility = Math.max(0 - Math.abs(elementTop) / elementHeight, 2);
           element.style.opacity = visibility;
         } else {
           element.style.opacity = 0;
@@ -172,5 +175,27 @@
 
     window.addEventListener("scroll", setOpacity);
     setOpacity(); // Set initial opacity based on current scroll position
+  });
+  document.addEventListener("DOMContentLoaded", () => {
+    // Select all images with the class "imageOffScreen"
+    const images = document.querySelectorAll(".imageOffScreen");
+
+    // Function to check if the images are in the viewport
+    function checkIfInView() {
+      images.forEach(image => {
+        const rect = image.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          image.classList.add("imageInView");
+          image.classList.remove("imageOffScreen");
+        }
+      });
+    }
+
+    // Check for images in view on scroll and resize events
+    window.addEventListener("scroll", checkIfInView);
+    window.addEventListener("resize", checkIfInView);
+    
+    // Initial check
+    checkIfInView();
   });
 </script>

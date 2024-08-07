@@ -85,9 +85,7 @@ textarea {
 /* --------INDEX PAGE -----------*/
 
 
-.session-Right {
-    float: right;
-}
+
 .nurvixHeader {
     color: rgb(228, 227, 226);
     width: 100%;
@@ -140,7 +138,8 @@ textarea {
     flex-direction: row;
     justify-content: center;
     gap: 10%;
-    padding-top: 10%;  
+    padding-top: 10%; 
+    padding-bottom: 150px; 
 }
 
 
@@ -155,10 +154,10 @@ textarea {
 }
 .experienceTitle{
     width: 100%;
-    font-size: 60px;
+    font-size: 90px;
     color: rgb(228, 227, 226);
-    font-family: FiraCode;
-    padding-bottom: 50px;
+    font-family: GreatVibes;
+    padding-bottom: 200px;
 }
 .WorkTitlesSession{
     padding-top: 20%;
@@ -201,6 +200,9 @@ textarea {
     padding: 10px;
     text-align: center;
 }
+.opositflex{
+    display: flex;
+}
 .Worklist{
     width: 100%;
     color: rgb(136, 136, 136);
@@ -220,35 +222,58 @@ textarea {
     padding-bottom: 20%;
 }
 
-/*FOTOS STYLING*/
-
-.ImageContainer {
-    width: 100%;
+.flexweb{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
     position: relative;
 }
-.workdiscription{
-    float:right
+.descriptionswebsites{
+    width: 50%;
+    float: right;
+    font-family: FiraCode;
+    font-size: 30px;
+    color:#fff;
+    align-items:center ;
 }
-.imageWebsite{
-    width: 100%;
+.divisionTemplates{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.project-title {
+    font-size: 30px; 
+    font-weight: bold; 
+    padding-bottom: 30px;
+  }
+  
+  /* Details styling */
+  .project-details {
+    font-size: 20px; /* Font size for the details */
     display: block;
+  }
+  
+  .project-details a {
+    color: #1e90ff; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .project-details a:hover {
+    text-decoration: underline; /* Underline links on hover */
+  }
+
+/*FOTOS STYLING*/
+
+.imageWebsiteRight{
+    width: 50%;
+    left: 170px;
 }
-.image__overlay {
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.6);
-	color: #ffffff;
-	font-family: "Firacode";
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	opacity: 0;	
-	transition: opacity 0.25s;
-	backdrop-filter: blur(5px);
+.imageWebsiteLeft{
+    width: 50%;
+    right: 170px;
 }
+
 .mobileappSession{
     padding-top: 20%;
     padding-bottom: 20%;
@@ -400,7 +425,8 @@ textarea {
     font-size:30px;
     width: 600px;
     color: rgb(63, 60, 56);
-    display: inline-block
+    display: inline-block;
+    padding-bottom: 100px;
 }
 .messagebox{
     height: 200px;
@@ -416,7 +442,6 @@ textarea {
     .karinnaHeader {
         font-size: 200px;
     }
-
 }
 
 @media only screen and (max-width: 992px) {
@@ -425,10 +450,7 @@ textarea {
         text-align: center;
 		float: right;
     }
-	.session-left {
-        float: none;
-        text-align: center;
-    }
+
     .nurvixHeader {
         font-size: 150px;
         left: -100px;
@@ -460,6 +482,7 @@ textarea {
         flex-direction: column;
         padding-top: 150px;
         gap: 10%;
+
     }
     .divisionWork{
         flex-direction: column;
@@ -588,6 +611,45 @@ textarea {
 
 /*---------------ANIMATIONS -----------*/
 
+/* Initial state for elements to animate */
+  .animate-on-scroll {
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+  }
+    .fadein {
+        animation: fadein 2s ease-in-out forwards;
+    }
+    /* WORK */
+    .slideRight {
+        animation: slideInRight 2s forwards;
+    }
+    .animated-textOpposite {
+        animation: slideInOpposite 2s forwards;
+    }
+/* WORK ANIMATION, SCROW FROM THE SIDES  */
+.imageOffScreen {
+    opacity: 0;
+    transform: translateY(50px); 
+    transition: all 0.5s ease-out;
+}
+
+.imageInView {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.animationfading {
+    animation: FadeIn 1s ease-in-out forwards;
+}
+.animated-textUp{
+    display: inline-block;
+    white-space: nowrap;
+    animation: slideUp 1s ease-in-out forwards;
+}
+   
+
+
 @keyframes fadeOut {
     from {
         opacity: 1;
@@ -598,11 +660,9 @@ textarea {
 }
 @keyframes fadein {
     from {
-        transform: scaleY(0%);
         opacity: 0;
     }
     to {
-        transform: scaleY(100%);
         opacity: 1;
     }
 }
@@ -629,41 +689,43 @@ textarea {
     }
   }
   
-  /* Initial state for elements to animate */
-  .animate-on-scroll {
-    opacity: 0;
-    transition: opacity 0.2s ease-out;
-  }
-  
-  /* Visible state to trigger animation */
-  .animate-on-scroll.visible {
-    opacity: 1;
-    transform: translateY(0);
-    animation: fadeInUp 0.2s ease-out forwards;
-  }
 
-.fadein {
-    animation: fadein 5s forwards;
-}
-@keyframes slideUp {
-    0% {
-        background-color: rgb(228, 227, 226);
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0%);
+            opacity: 1;
+        }
     }
-    100% {
-        
-        background-color: rgb(65, 61, 56);
+    
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0%);
+            opacity: 1;
+        }
     }
-}
-@keyframes slideInRight {
-    from {
-        transform: translateX(50%);
-        opacity: 0;
+
+  
+    @keyframes slideInOpposite {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0%);
+            opacity: 1;
+        }
     }
-    to {
-        transform: translateX(0);
-        opacity: 2;
-    }
-}
+      /*  */
+    
 
 @keyframes slideUp {
     from {
@@ -675,36 +737,4 @@ textarea {
         opacity: 1;
     }
 }
-@media (hover: hover) {
-    .image__overlay:hover{
-        opacity: 1;
-        }
-        .hoverOverImages {
-        font-size: 2em;
-        font-weight: bold;
-        position: absolute;
-        }
 
-    }
-
-
-.animated-textRight4s {
-    display: inline-block;
-    white-space: nowrap;
-    animation: slideInRight 4s ease-in-out forwards;
-}
-
-.animated-textRight3s {
-    display: inline-block;
-    white-space: nowrap;
-    animation: slideInRight 3s ease-in-out forwards;
-}
-
-.animationfading {
-    animation: FadeIn 1s ease-in-out forwards;
-}
-.animated-textUp{
-    display: inline-block;
-    white-space: nowrap;
-    animation: slideUp 1s ease-in-out forwards;
-}
