@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,7 +20,7 @@
       <div class="copyright">© | 2024</div>
     </div>
     <!-- TITLE starts -->
-    <div class="ExpertiseSession animate-on-scroll">
+    <section class="ExpertiseSession hidden">
       <div class="experienceTitle">My Expertise</div>
       <div class="divisionExper">
         <div class="expertisetitle">Back-end Development</div>
@@ -30,15 +30,17 @@
         </div>
         <div class="expertisetitle">Front-end Design</div>
         <div class="expertisecontent">
-          Passionate about design in general, experience on HTML, JavaScript, and CSS.
+          Passionate about design in general, experience on HTML, JavaScript,
+          and CSS.
         </div>
         <div class="expertisetitle">Mobile App</div>
         <div class="expertisecontent">
-          Hybrid mobile apps are my way to go on Flutterflow framework or React Native.
+          Hybrid mobile apps are my way to go on Flutterflow framework or React
+          Native.
         </div>
       </div>
-    </div>
-    <div class="WorkTitlesSession animate-on-scroll">
+    </section>
+    <div class="WorkTitlesSession">
       <div class="divisionWork">
         <div class="myWork">
           <div>My work</div>
@@ -46,156 +48,111 @@
         <div class="vertical-line fadein"></div>
         <div class="Worklist">
           <a class="workTitle" data-scroll="nurvix">NURVIX</a><br />
-            Web development</span
-          ><br />
-          <a class="workTitle" data-scroll="signup">SIGN UP</a
-          ><br /><span> Web Development</span><br />
-          <a class="workTitle" data-scroll="fitness">FITNESS</a
-          ><br /><span> Web Development</span><br />
-          <a class="workTitle" data-scroll="aibeans">AIBEANS</a
-          ><br /><span> Mobile Development</span><br />
-          <a class="workTitle" data-scroll="jiujitsu">JIU-JITSU</a
-          ><br /><span> Photopraphy</span>
+          <span>Web development</span><br />
+          <a class="workTitle" data-scroll="signup">SIGN UP</a><br />
+          <span>Web Development</span><br />
+          <a class="workTitle" data-scroll="fitness">FITNESS</a><br />
+          <span>Web Development</span><br />
+          <a class="workTitle" data-scroll="aibeans">AIBEANS</a><br />
+          <span>Mobile Development</span><br />
+          <a class="workTitle" data-scroll="jiujitsu">JIU-JITSU</a><br />
+          <span>Photography</span>
         </div>
       </div>
     </div>
-    <div class="ImageSession">
+    <section class="ImageSession">
       <div class="experienceTitle">Web Development</div>
-      <div class="flexweb">
-        <div class="divisionTemplates ">
-          <img
-            src="../static/uploads/nurvixLaptop.png"
-            alt="NurVIX Page"
-            class="imageWebsiteLeft animated-textOpposite"
-          />
-          <div class="descriptionswebsites fadein">
-            <span class="project-title">NurVIX - Full stack</span>
-            <br />
-            <span class="project-details">
-              Specs: Python (Flask), HTML, CSS <br />
-              Deployed: Godaddy
-              <a href="https://nurvix.live" target="_blank">NurVI X website</a>
-            </span>
-          </div>
-        </div> 
-        <div class="divisionTemplates opositflex">
-          <div class="descriptionswebsites fadein">
-            <span>Danielly's Fitness - Front end</span>
-            <br />
-            <p>Specs: PHP, HTML, CSS <br />Deployed: Wordpress</p>
-          </div>
-          <img
-            src="../static/uploads/daniellyLaptop.png"
-            alt="Fitness Page"
-            class="imageWebsiteRight  slideRight"
-          />
+      <section class="divisionTemplates">
+        <img
+          src="{{ url_for('static', filename='uploads/nurvixLaptop.png') }}"
+          alt="NurVIX Page"
+          class="imageWebsiteLeft hiddenIMAGES"
+        />
+        <div class="descriptionswebsites hidden">
+          <span class="project-title">NurVIX</span>
+          <br />
+          <span class="project-details">
+            Specs: Python (Flask), HTML, CSS <br />
+            Deployed: Godaddy
+            <br><a href="https://nurvix.live" target="_blank">Website!</a>
+          </span>
         </div>
-        <div class="divisionTemplates">
-          <img
-            src="../static/uploads/Mercy Laptop.png"
-            alt="Sign Up Page"
-            class="imageWebsiteLeft animated-textOpposite"
-          />
-          <div class="descriptionswebsites fadein">
-            <p>
-              <span>Sign Up Registration - Full Stack</span>
-              <br />
-              <span>Specs: Python(Django), HTML, CSS</span><br />
-              <span>Database: SQLite Built in</span>
-            </p>
-          </div>
+      </section>
+      <section class="divisionTemplates opositflex">
+        <div class="descriptionswebsites hidden">
+          <span class="project-title">Danielly's Fitness</span>
+          <br />
+          <span class="project-details">Specs: PHP, HTML, CSS <br />Deployed: Wordpress
+          <br><a href="https://daniellysfitness.com" target="_blank">Website!</a></span>
         </div>
-      </div>
-    </div>
-    <div class="mobileappSession animate-on-scroll" data-section="aibeans">
+        <img
+          src="{{ url_for('static', filename='uploads/daniellyLaptop.png') }}"
+          alt="Fitness Page"
+          class="imageWebsiteRight hiddenIMAGES-right"
+        />
+      </section>
+      <section class="divisionTemplates">
+        <img
+          src="{{ url_for('static', filename='uploads/Mercy Laptop.png') }}"
+          alt="Sign Up Page"
+          class="imageWebsiteLeft hiddenIMAGES"
+        />
+        <div class="descriptionswebsites hidden">
+            <span class="project-title">Sign Up Registration</span>
+            <br />
+            <span class="project-details">Specs: Python(Django), HTML, CSS<br />
+            Database: SQLite Built in</span>
+          </p>
+        </div>
+      </section>
+    </section>
+    <section class="mobileappSession" data-section="aibeans">
       <div class="experienceTitle">Mobile Application</div>
       <div class="AppSession">
         <video class="VideoAIBeans" loop autoplay muted>
-          <source src="../static/uploads/AIBEANS.mov" type="video/mp4" />
+          <source
+            src="{{ url_for('static', filename='uploads/AIBEANS.mov') }}"
+            type="video/mp4"
+          />
         </video>
-        <div class="AIBeansbox">
-          <div class="AIBeansdescription fade-in">
+        <div class="AIBeansbox hidden">
+          <div class="AIBeansdescription ">
             <p>
               <span>AIBeans - Full Stack</span><br /><br />
               <span>
                 Specs:<br />
-                Pyton, React Native</span
-              >
-              <br />Deployed: <br />Heroku, Apple Store <br>
-              (Test Mode)
+                Python, React Native
+              </span>
+              <br />Deployed: <br />Heroku, Apple Store <br />(Test Mode)
             </p>
           </div>
         </div>
       </div>
-    </div>
-    <div class="PhotographySession animate-on-scroll" data-section="jiujitsu">
+    </section>
+    <section
+      class="PhotographySession animate-on-scroll"
+      data-section="jiujitsu"
+    >
       <div class="experienceTitle">Photography</div>
       <div class="photographygalery">Coming soon!</div>
-    </div>
+    </section>
   </body>
 </html>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const elementsToAnimate = document.querySelectorAll(".animate-on-scroll");
-
-    function setOpacity() {
-      elementsToAnimate.forEach(element => {
-        const rect = element.getBoundingClientRect();
-        const elementTop = rect.top;
-        const elementHeight = rect.height;
-        const windowHeight = window.innerHeight;
-
-        if (elementTop >= 0 && elementTop <= windowHeight) {
-          const visibility = Math.min((windowHeight - elementTop) / elementHeight, 1);
-          element.style.opacity = visibility;
-        } else if (elementTop < 0) {
-          // When scrolling past the element
-          const visibility = Math.max(0 - Math.abs(elementTop) / elementHeight, 2);
-          element.style.opacity = visibility;
-        } else {
-          element.style.opacity = 0;
-        }
-      });
-    }
-
-    // Smooth scrolling for links
-    document.querySelectorAll("a[data-scroll]").forEach((link) => {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
-        const section = this.getAttribute("data-scroll");
-        const target = document.querySelector(
-          `.ImageContainer[data-section="${section}"]`
-        );
-        if (target) {
-          target.scrollIntoView({ behavior: "smooth" });
-        }
-      });
+  // JAVASCRIPT FOR SCROLLING AND ANIMATION ON WEB IMAGES
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      } else {
+        entry.target.classList.remove("show");
+      }
     });
-
-    window.addEventListener("scroll", setOpacity);
-    setOpacity(); // Set initial opacity based on current scroll position
   });
-  document.addEventListener("DOMContentLoaded", () => {
-    // Select all images with the class "imageOffScreen"
-    const images = document.querySelectorAll(".imageOffScreen");
 
-    // Function to check if the images are in the viewport
-    function checkIfInView() {
-      images.forEach(image => {
-        const rect = image.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom > 0) {
-          image.classList.add("imageInView");
-          image.classList.remove("imageOffScreen");
-        }
-      });
-    }
-
-    // Check for images in view on scroll and resize events
-    window.addEventListener("scroll", checkIfInView);
-    window.addEventListener("resize", checkIfInView);
-    
-    // Initial check
-    checkIfInView();
-  });
+  const hiddenElements = document.querySelectorAll(
+    ".hidden, .hiddenIMAGES, .hiddenIMAGES-right "
+  );
+  hiddenElements.forEach((el) => observer.observe(el));
 </script>

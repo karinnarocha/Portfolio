@@ -12,7 +12,7 @@
   </head>
   <body class="fullpage sandbackground">
     <!-- NAV starts -->
-    <div class="navspace navspace.dark">
+    <header class="navspace navspace.dark">
       <div class="nav-line"></div>
       <div>
         <a href="https://www.linkedin.com/in/karinnarocha/" target="_blank"
@@ -26,35 +26,46 @@
         <a href="https://x.com/_nurvix" target="_blank">TW</a>
       </div>
       <div class="copyright">© | 2024</div>
-    </div>
-
-    <!-- TITLE starts -->
-    <header>
-      <a
-        href="https://www.twitch.tv/nurvix"
-        class="nurvixHeader animationfading"
-        >NurVIX</a
-      >
-      <div class="karinnaHeader animationfading">Karinna Rocha</div>
     </header>
+    <main>
+      <section class="hidden">
+        <a href="https://www.twitch.tv/nurvix" class="nurvixHeader">NurVIX</a>
+        <div class="karinnaHeader">Karinna Rocha</div>
+        <div class="developerHeader animationfading">
+          <div>Software Developer</div>
+        </div>
+      </section>
 
-    <!-- Body starts -->
-    <div class="developerHeader animationfading">
-      <div>Software Developer</div>
-    </div>
-    <div class="Menu-link">
-      <div>
-        <a href="{{ url_for('workPage.workpage') }}">WORK</a>
-      </div>
-      <div>●</div>
-      <div>
-        <a href="{{ url_for('aboutPage.aboutpage') }}">ABOUT</a>
-      </div>
-      <div>●</div>
-      <div>
-        <a href="{{ url_for('contactPage.contact') }}">CONTACT</a>
-      </div>
-    </div>
+      <section class="Menu-link">
+        <div>
+          <a href="{{ url_for('workPage.workpage') }}">WORK</a>
+        </div>
+        <div>
+          <a href="{{ url_for('aboutPage.aboutpage') }}">ABOUT</a>
+        </div>
+        <div>
+          <a href="{{ url_for('contactPage.contact') }}">CONTACT</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer></footer>
   </body>
-  <footer></footer>
 </html>
+
+<script>
+  // JAVASCRIPT FOR SCROLLING AND ANIMATION ON WEB IMAGES
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      } else {
+        entry.target.classList.remove("show");
+      }
+    });
+  });
+
+  const hiddenElements = document.querySelectorAll(".hidden");
+  hiddenElements.forEach((el) => observer.observe(el));
+</script>

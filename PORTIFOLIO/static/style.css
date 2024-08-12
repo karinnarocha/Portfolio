@@ -1,5 +1,14 @@
 
+/* --------------- FONTS ------------- */
 
+@font-face {
+    font-family: FiraCode;
+    src: url(fonts/FiraCode-SemiBold.ttf);
+}
+@font-face {
+    font-family: GreatVibes;
+    src: url(fonts/GreatVibes-Regular.ttf);
+}
 /* ------------ GLOBAL -------- */
 a{
     color: inherit;
@@ -20,6 +29,7 @@ form{
     flex-direction: column;
     gap: 15px;
     text-align: center;
+    justify-content: center;
 }
 input[type="email"],
 input[type="text"],
@@ -66,9 +76,6 @@ textarea {
 
 /*------------- BODY------------*/
 
-.fullpage {
-    text-align: center;
-}
 
 .sandbackground {
     background: url('./uploads/sand-water.avif') no-repeat center center fixed;
@@ -92,9 +99,7 @@ textarea {
     text-shadow: rgb(65, 61, 56)1px 0 10px;;
     font-family: FiraCode;
     text-align: center;
-    position: relative;
-    top: 148px;
-    left: -360px;
+    top: 200px;
     font-size: 200px;
 }
 .nurvixHeader:visited{
@@ -108,6 +113,7 @@ textarea {
     color: rgb(65, 61, 56);
     text-shadow: rgb(228, 227, 226) 1px 0 10px;
     font-family: GreatVibes;
+    text-align: center;
     font-weight: 500;
     font-size: 230px;
     position: relative;
@@ -124,7 +130,7 @@ textarea {
     text-shadow: rgb(228, 227, 226) 1px 0 5px;
     font-family: FiraCode;
 	padding-top: 130px;
-    
+    text-align: center;
 }
 
 .Menu-link{
@@ -145,19 +151,21 @@ textarea {
 
 /*--------------- WORK PAGE ---------------*/
 .ExpertiseSession{
-    padding-top: 20%;
+    padding-top: 16%;
     padding-bottom: 20%;
 }
 .divisionExper{
     width: 100%;
     justify-content: center;
+    text-align: center;
 }
 .experienceTitle{
     width: 100%;
-    font-size: 90px;
+    font-size: 100px;
     color: rgb(228, 227, 226);
     font-family: GreatVibes;
-    padding-bottom: 200px;
+    padding-bottom: 10%;
+    text-align: center;
 }
 .WorkTitlesSession{
     padding-top: 20%;
@@ -221,20 +229,10 @@ textarea {
     padding-top: 20%;
     padding-bottom: 20%;
 }
-
-.flexweb{
-    display: flex;
-    flex-direction: column;
-    gap: 150px;
-    position: relative;
-}
 .descriptionswebsites{
     width: 50%;
-    float: right;
-    font-family: FiraCode;
-    font-size: 30px;
-    color:#fff;
-    align-items:center ;
+    display: flex;
+    flex-direction: column;
 }
 .divisionTemplates{
     display: flex;
@@ -243,24 +241,29 @@ textarea {
     padding-bottom: 10%;
 }
 .project-title {
-    font-size: 30px; 
+    font-size: 80px; 
     font-weight: bold; 
     padding-bottom: 30px;
+    font-family: FiraCode;
+    color:#fff;
   }
   
-  /* Details styling */
-  .project-details {
-    font-size: 20px; /* Font size for the details */
-    display: block;
+.project-details {
+    align-self: center;
+    font-family: FiraCode;
+    color:#fff;
+    font-size: 30px;
+    position: relative;
+    text-align: center;
   }
   
   .project-details a {
-    color: #1e90ff; /* Link color */
-    text-decoration: none; /* Remove underline from links */
+    color: #1e90ff; 
+    text-decoration: none;
   }
   
   .project-details a:hover {
-    text-decoration: underline; /* Underline links on hover */
+    text-decoration: underline; 
   }
 
 /*FOTOS STYLING*/
@@ -271,13 +274,17 @@ textarea {
 }
 .imageWebsiteLeft{
     width: 50%;
-    right: 170px;
+
 }
 
 .mobileappSession{
     padding-top: 20%;
     padding-bottom: 20%;
+    background: url(./uploads/beachfood.avif) no-repeat right  center ;
+    background-size: cover;
 }
+
+
 /*VIDEO STYLING*/
 .VideoAIBeans{
     height: 700px;
@@ -311,10 +318,11 @@ textarea {
 
 }
 .photographygalery{
-    font-family: FiraCode;
+    font-family: GreatVibes;
     font-size: 30px;
     color:#fff;
     padding: 30px;
+    text-align: center;
 }
 
 /*---------------ABOUT PAGE -----------------*/
@@ -326,6 +334,7 @@ textarea {
     color: rgb(228, 227, 226);
     padding-top: 200px;
     position: absolute;
+    text-align: center;
 }
 .division{
     flex: auto;
@@ -427,11 +436,79 @@ textarea {
     color: rgb(63, 60, 56);
     display: inline-block;
     padding-bottom: 100px;
+    justify-content: center;
 }
 .messagebox{
     height: 200px;
 }
 /*---------------FOOTER-----------------*/
+
+
+
+
+/*---------------ANIMATIONS -----------*/
+
+/* Initial state for elements to ON JAVASCRIPT */
+.hidden {
+    opacity: 0;
+    transition: all 3s;
+    filter: blur(5px);
+}
+.hiddenIMAGES-right {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 3s;
+  }
+.show {
+    opacity: 1 !important;
+    filter: blur(0) !important;
+    transform: translateX(0) !important;
+  }
+/* Initial state for elements to ON JAVASCRIPT images*/
+.hiddenIMAGES {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 3s  ;
+    }
+
+.fadein {
+    animation: fadein 3s ease-in-out forwards;
+}
+
+/* WORK */
+.slideRight {
+    animation: slideInRight 2s forwards;
+}
+.animated-textOpposite {
+    animation: slideInOpposite 5s forwards;
+}
+/* WORK ANIMATION, SCROW FROM THE SIDES  */
+.imageOffScreen {
+    opacity: 0;
+    transform: translateY(50px); 
+    transition: all 0.5s ease-out;
+}
+
+.imageInView {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.animationfading {
+    animation: FadeIn 1s ease-in-out forwards;
+}
+.animated-textUp{
+    display: inline-block;
+    white-space: nowrap;
+    animation: slideUp 1s ease-in-out forwards;
+}
+   
+
+
+/* Animation definitions */
+
+
 
 /*--------------MEDIA RESIZING --------------*/
 @media only screen and (max-width: 1200px) {
@@ -442,6 +519,12 @@ textarea {
     .karinnaHeader {
         font-size: 200px;
     }
+    .project-title {
+    font-size: 50px; 
+  }
+  .project-details{
+    font-size: 15px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -558,6 +641,11 @@ textarea {
     }
 
 /* --------------- work page ------------- */
+    .experienceTitle{
+        padding-top: 50px;
+        font-size: 50px;
+    }
+    
     .divisionExper {
         flex-direction: column;
     }
@@ -565,16 +653,37 @@ textarea {
     .divisionWork{
         flex-direction: column;
     }
+    .expertisetitle{
+        font-size: 20px;
+    }
+    .expertisecontent{
+        font-size: 15px;
+    }
     .AppSession{
         flex-direction: column;
         row-gap: 100px; 
     }
     .workTitle{
-        font-size: 70px;
+        font-size: 60px;
     }
     .myWork{
         text-align: center;
         justify-content: center;
+    }
+    .project-title {
+        font-size: 15px; 
+        padding-bottom: 5px;
+      }
+      .project-details{
+        font-size: 10px;
+      }
+    .mobileappSession{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .AIBeansdescription {
+        font-size: 20px;
     }
 
 /* --------------- about page ------------- */
@@ -598,143 +707,3 @@ textarea {
 
 }
 }
-/* --------------- FONTS ------------- */
-
-@font-face {
-    font-family: FiraCode;
-    src: url(fonts/FiraCode-SemiBold.ttf);
-}
-@font-face {
-    font-family: GreatVibes;
-    src: url(fonts/GreatVibes-Regular.ttf);
-}
-
-/*---------------ANIMATIONS -----------*/
-
-/* Initial state for elements to animate */
-  .animate-on-scroll {
-    opacity: 0;
-    transition: opacity 0.4s ease-out;
-  }
-    .fadein {
-        animation: fadein 2s ease-in-out forwards;
-    }
-    /* WORK */
-    .slideRight {
-        animation: slideInRight 2s forwards;
-    }
-    .animated-textOpposite {
-        animation: slideInOpposite 2s forwards;
-    }
-/* WORK ANIMATION, SCROW FROM THE SIDES  */
-.imageOffScreen {
-    opacity: 0;
-    transform: translateY(50px); 
-    transition: all 0.5s ease-out;
-}
-
-.imageInView {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-.animationfading {
-    animation: FadeIn 1s ease-in-out forwards;
-}
-.animated-textUp{
-    display: inline-block;
-    white-space: nowrap;
-    animation: slideUp 1s ease-in-out forwards;
-}
-   
-
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes FadeIn {
-    from {
-        transform: scale(0.95);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-/* Animation definitions */
-@keyframes fadeInUp {
-    from {
-      transform: translateY(20px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-
-
-    @keyframes slideInRight {
-        from {
-            transform: translateX(100%);
-            opacity: 0;
-        }
-        to {
-            transform: translateX(0%);
-            opacity: 1;
-        }
-    }
-    
-    @keyframes slideInLeft {
-        from {
-            transform: translateX(-100%);
-            opacity: 0;
-        }
-        to {
-            transform: translateX(0%);
-            opacity: 1;
-        }
-    }
-
-  
-    @keyframes slideInOpposite {
-        from {
-            transform: translateX(-100%);
-            opacity: 0;
-        }
-        to {
-            transform: translateX(0%);
-            opacity: 1;
-        }
-    }
-      /*  */
-    
-
-@keyframes slideUp {
-    from {
-        transform: translateY(10%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
