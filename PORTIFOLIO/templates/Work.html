@@ -40,7 +40,8 @@
         </div>
       </div>
     </section>
-    <div class="WorkTitlesSession">
+    <!-- WORK MENU starts -->
+    <section class="WorkTitlesSession">
       <div class="divisionWork">
         <div class="myWork">
           <div>My work</div>
@@ -59,9 +60,10 @@
           <span>Photography</span>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- WEBSITED TEMPLATES STARTS HERE -->
     <section class="ImageSession">
-      <div class="experienceTitle">Web Development</div>
+      <div class="experienceTitle ">Web Development</div>
       <section class="divisionTemplates">
         <img
           src="{{ url_for('static', filename='uploads/nurvixLaptop.png') }}"
@@ -71,26 +73,30 @@
         <div class="descriptionswebsites hidden">
           <span class="project-title">NurVIX</span>
           <br />
-          <span class="project-details">
-            Specs: Python (Flask), HTML, CSS <br />
-            Deployed: Godaddy
-            <br><a href="https://nurvix.live" target="_blank">Website!</a>
+          <span class="project-details"> One of my first websites I ever built, with the goal of practicing my skills on coding and actually it not come out that bad.
           </span>
         </div>
       </section>
+      <div class="projectSPECS">
+        Specs: Python (Flask), HTML, CSS | Deployed: Godaddy
+        <br><br><a href="https://nurvix.live" target="_blank">
+          <button class="button w-button" type="button">Website</button>
+      </a>
       <section class="divisionTemplates opositflex">
         <div class="descriptionswebsites hidden">
           <span class="project-title">Danielly's Fitness</span>
-          <br />
-          <span class="project-details">Specs: PHP, HTML, CSS <br />Deployed: Wordpress
-          <br><a href="https://daniellysfitness.com" target="_blank">Website!</a></span>
+          <br/> 
+          <span class="project-details"> This is my project I am most proud of, just project I had the oportunity to be my first comercial team based where the client was a winner nominated to Sonoma business Awards </span>
         </div>
         <img
           src="{{ url_for('static', filename='uploads/daniellyLaptop.png') }}"
           alt="Fitness Page"
           class="imageWebsiteRight hiddenIMAGES-right"
-        />
-      </section>
+        /></section>
+        <div class="projectSPECS">Specs: PHP, HTML, CSS | Deployed: Wordpress
+        <br><br><a href="https://daniellysfitness.com" target="_blank">
+          <button class="button w-button" type="button">Website</button>
+      </a>
       <section class="divisionTemplates">
         <img
           src="{{ url_for('static', filename='uploads/Mercy Laptop.png') }}"
@@ -100,12 +106,15 @@
         <div class="descriptionswebsites hidden">
             <span class="project-title">Sign Up Registration</span>
             <br />
-            <span class="project-details">Specs: Python(Django), HTML, CSS<br />
-            Database: SQLite Built in</span>
+            <span class="project-details"> Managed a team of 10 developers, A streamlined, secure, and user-friendly sign-in system designed for efficient authentication and easy user management for a course registration of 40 courses . 
+            </span>
           </p>
         </div>
       </section>
+      <div class="projectSPECS">Specs: Python(Django), HTML, CSS | 
+        Database: SQLite Built in</div>
     </section>
+    <!-- MOBILE APP TEMPLATE STARS HERE -->
     <section class="mobileappSession" data-section="aibeans">
       <div class="experienceTitle">Mobile Application</div>
       <div class="AppSession">
@@ -129,6 +138,7 @@
         </div>
       </div>
     </section>
+    <!-- PHOTOSHOOT STARTS HERE -->
     <section
       class="PhotographySession animate-on-scroll"
       data-section="jiujitsu"
