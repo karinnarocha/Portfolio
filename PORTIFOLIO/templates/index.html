@@ -27,17 +27,17 @@
       </div>
       <div class="copyright">© | 2024</div>
     </header>
-    <section class="hidden">
-      <a href="https://www.twitch.tv/nurvix" class="nurvixHeader"
+    <section>
+      <a href="https://www.twitch.tv/nurvix" class="nurvixHeader hidden"
         >NurV<span class="adaptI">|</span>X</a
       >
-      <div class="karinnaHeader">Karinna Rocha</div>
+      <div class="karinnaHeader" id="karinnaHeader">Karinna Rocha</div>
       <div class="developerHeader animationfading">
         <div>Software Developer</div>
       </div>
     </section>
 
-    <section class="Menu-link">
+    <section class="Menu-link hidden">
       <div>
         <a href="{{ url_for('workPage.workpage') }}">Work</a>
       </div>
@@ -68,4 +68,26 @@
 
   const hiddenElements = document.querySelectorAll(".hidden");
   hiddenElements.forEach((el) => observer.observe(el));
+
+  function typeWriter(element, text, delay = 100) {
+    let index = 0;
+    function addLetter() {
+      if (index < text.length) {
+        element.textContent += text.charAt(index);
+        index++;
+        setTimeout(() => requestAnimationFrame(addLetter), delay);
+      }
+    }
+    addLetter();
+  }
+
+  window.onload = function () {
+    const karinnaHeader = document.getElementById("karinnaHeader");
+
+    // Clear initial content
+    karinnaHeader.textContent = "";
+
+    // Start typing animations with different delays
+    typeWriter(karinnaHeader, "Karinna Rocha", 100);
+  };
 </script>
