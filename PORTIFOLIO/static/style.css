@@ -27,13 +27,13 @@ a:visited {
     text-decoration: none;
 }
 
-form{
+form {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 15px;
     text-align: center;
-    justify-content: center;
+    margin: 0 auto; /* Center the form contents horizontally */
 }
 input[type="email"],
 input[type="text"],
@@ -42,7 +42,6 @@ textarea {
     padding: 10px; 
     border: 1px solid #ccc;
     font-size: 16px; /* Font size */
-    width: 100%; 
     margin-bottom: 15px; 
     height: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -101,32 +100,34 @@ textarea {
     color: rgb(228, 227, 226);
     width: 100%;
     text-shadow: rgb(65, 61, 56)1px 0 10px;;
-    font-family: FiraCode;
+    font-family: GreatVibes;
     text-align: center;
-    top: 200px;
     font-size: 200px;
+    padding-left: 7%;
+    padding-top: 10%;
+    opacity: 0.7;
+    position: relative;
+    top: 200px;
 }
+
 .nurvixHeader:visited{
     color: rgb(228, 227, 226);
 }
-
+.adaptI{
+    font-size: 95px;
+}
 
 .karinnaHeader {
     width: 100%;
     padding-top: 20px;
     color: rgb(65, 61, 56);
     text-shadow: rgb(228, 227, 226) 1px 0 10px;
-    font-family: GreatVibes;
     text-align: center;
-    font-weight: 500;
-    font-size: 230px;
+    font-weight: lighter;
+    font-size: 210px;
+    font-family: FiraCode;
     position: relative;
-    top: 100px;
-    margin-top: -80px;
-
 }
-
-/*-------------DESCRIPTION INDEX------------*/
 .developerHeader{
     width: 100%;
     font-size: 40px;
@@ -138,8 +139,8 @@ textarea {
 }
 
 .Menu-link{
-    width: 100%;
-    font-size: 50px;
+    font-size: 70px;
+    font-weight: 600;
     color: #44413c;
     text-shadow: rgb(228, 227, 226) 1px 0 5px;
     font-family: FiraCode;
@@ -368,6 +369,7 @@ text-decoration: underline;
     padding-top: 50px;
     text-align: center;
     margin: 10%;
+    width: 100%s;
 
 }
 .skillsdescription{
@@ -439,15 +441,17 @@ text-decoration: underline;
     font-size: 20px;
     padding-bottom: 80px;
     color: rgb(63, 60, 56);
+    text-align: center;
 }
-.contactForm{
+.contactForm {
     font-family: FiraCode;
-    font-size:30px;
-    width: 600px;
+    font-size: 30px;
+    width: 500px;
     color: rgb(63, 60, 56);
-    display: inline-block;
     padding-bottom: 100px;
+    display: flex;
     justify-content: center;
+    margin: 0 auto; /* Center the form horizontally */
 }
 .messagebox{
     height: 200px;
@@ -565,11 +569,12 @@ text-decoration: underline;
         align-items: center;
     }
     .nurvixHeader {
-        font-size: 120px;
-        left: -80px;
+        font-size: 100px;
+        top: 120px;
+        left: -50px;
     }
     .karinnaHeader {
-        font-size: 140px;
+        font-size: 120px;
     }
     .Menu-link {
         font-size: 40px;
@@ -625,32 +630,37 @@ text-decoration: underline;
         height: 2px;
     }
     .navspace{
-        font-size: 15px;
         gap:10px;
     }
     /* --------------- index ------------- */
-    .developerHeader {
-        font-size: 20px;
-        text-align: center;
-		float: right;
-        top: -150px;
-        left: -20px;
-    }
-	.Menu-link {
-        font-size: 30px;
-        flex-direction: column;
-        padding-top: 150px;
-        gap: 10%;
-        
-    }
+    
     .nurvixHeader {
-        font-size: 80px;
-        left: -40px;
+        font-size: 60px;
+        top: 180px;
+        padding-left: 50px;
+    }
+    .adaptI{
+        font-size: 50px;
     }
     .karinnaHeader {
-        font-size: 60px;
+        font-size: 75px;
+        padding-top: 120px;
+        font-family: FiraCode;
+        font-weight: 6;
     }
-
+    .developerHeader {
+        font-size: 30px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .Menu-link {
+        text-align: start;
+        font-size: 60px;
+        flex-direction: column;
+        width: max-content;
+        padding-left: 30px;
+        padding-top: 50px; 
+    }
 /* --------------- work page ------------- */
     .experienceTitle{
         padding-top: 50px;
@@ -719,8 +729,11 @@ text-decoration: underline;
 /* --------------- about page ------------- */
 .photoadjust{
     padding-left:5px;
+    margin: 0 auto;
 }
-
+.Abouttitle{
+    font-size: 180px;
+}
 /* --------------- contact page ------------- */
 .ContactTitle {
     font-size: 80px;
