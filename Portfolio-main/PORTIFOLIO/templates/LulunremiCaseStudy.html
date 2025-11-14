@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Work</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body class="fullpage">
+    <!-- NAV starts -->
+    <nav class="navspacecontainer">
+      <div class="navspace">
+        <div class="nav-line"></div>
+        <div>
+          <a href="{{ url_for('indexPage.home') }}">HOME</a>
+        </div>
+        <div class="copyright">© | 2024</div>
+      </div>
+    </nav>
+    <!-- BODY OF STUDY CASE starts -->
+    <section>
+      <div class="StudycaseTitleSection">
+        <h1 class="StudycaseTitle">Lulu&Remi</h1>
+        <h3 class="StudyCaseSubTitle">
+          This page contains the case study of Lulu&Remi Website which
+          includes the Project Overview, Tools Used and Live Links to the
+          official product.
+        </h3>
+      </div>
+      <div class="StudycaseButton">
+        <a href="http://www.lulunremi.com" target="_blank">
+          <button class="button w-button" type="button">Website Link</button></a
+        >
+      </div>
+      <div class="CaseStudyContainer">
+        <div class="CaseStudyEdge">
+          <img
+            src="{{ url_for('static', filename='uploads/lulunremileftside.png') }}"
+            alt="albert Web"
+            class="imageCaseStudyEdges"
+          />
+        </div>
+        <div class="CaseStudyCenter">
+          <img
+            src="{{ url_for('static', filename='uploads/Lulunremimainpage.png') }}"
+            alt="albert Web"
+            class="imageCaseStudycenter"
+          />
+        </div>
+        <div class="CaseStudyEdge">
+          <img
+            src="{{ url_for('static', filename='uploads/lulunremirightside.png') }}"
+            alt="albert Web"
+            class="imageCaseStudyEdges"
+          />
+        </div>
+      </div>
+      <div class="StudocaseDescriptionSection">
+        <div class="StudyCase-desc">
+          <h2 class="DescTitleStudyCase">Lulu&Remi</h2>
+          <p class="DescStudyCase">
+            Lulu & Remi is a children’s creative brand built around interactive 
+            coloring–sticker books designed to spark imagination, hands-on learning, 
+            and joyful play. My responsibility was to design and develop a website 
+            that captured the brand’s playful identity while staying clean, modern, 
+            and optimized for parents looking for educational products.
+            <br /><br />
+            From UI/UX design to front-end development, I created a fully responsive 
+            website that highlights the books, showcases the characters, and delivers 
+            a smooth shopping experience. The site is built with performance, visual 
+            appeal, and brand storytelling in mind — helping increase engagement, 
+            build trust with parents, and support future product launches.
+            <br /><br />
+            The result is a vibrant yet simple digital experience that reflects the 
+            heart of the Lulu & Remi brand: creativity, fun, and learning.
+          </p>
+        </div>
+        <div class="StudyCase-toolsused">
+          <h2 class="DescTitleStudyCase">Tools Used</h2>
+          <div class="DescStudyCase">
+            <div class="TollsIcons">
+              <h4>Shopify</h4>
+            </div>
+            <div class="TollsIcons">
+              <p>Next.js</p>
+            </div>
+            <div class="TollsIcons">
+              <h4>CSS</h4>
+            </div>
+            <div class="TollsIcons">
+              <h4>Vercel</h4>
+            </div>
+            <div class="TollsIcons">
+              <h4>git CLI</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="StudycaseButton">
+        <a href="https://wwww.lulunremi.com" target="_blank">
+          <button class="button w-button" type="button">Website Link</button></a
+        >
+      </div>
+      <footer class="Spacefooter">
+        <div class="flexLeftsideFooter">
+          <h2>Karinna Rocha</h2>
+          <h4>
+            Full Stack developer with the creative mind of designing inovated
+            and responsive softwares
+          </h4>
+        </div>
+        <div class="flexRightsideFooter">
+          <h2>Socials</h2>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Work</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body class="fullpage">
+    <!-- NAV starts -->
+    <nav class="navspacecontainer">
+      <div class="navspace">
+        <div class="nav-line"></div>
+        <div>
+          <a href="{{ url_for('indexPage.home') }}">HOME</a>
+        </div>
+        <div class="copyright">© | 2024</div>
+      </div>
+    </nav>
+    <!-- BODY OF STUDY CASE starts -->
+    <section class="fullpage">
+      <div class="StudycaseTitleSection">
+        <div class="StudycaseTitle">Hellen Architect</div>
+        <h3 class="StudyCaseSubTitle">
+          This page contains the case study of Hellen Rocha Website which
+          includes the Project Overview, Tools Used and Live Links to the
+          official product.
+        </h3>
+      </div>
+      <div class="StudycaseButton">
+        <a
+          href="https://www.figma.com/design/DJgWrK82cQOE0lUpErKXFC/Hellen-Rocha?node-id=0-1&p=f&t=UeS3lVzIArvDW69L-0"
+          target="_blank"
+        >
+          <button class="button w-button" type="button">Website Link</button></a
+        >
+      </div>
+      <div class="CaseStudyContainer">
+        <div class="CaseStudyEdge">
+          <img
+            src="{{ url_for('static', filename='uploads/hellensideleft.png') }}"
+            alt="albert Web"
+            class="imageCaseStudyEdges"
+          />
+        </div>
+        <div class="CaseStudyCenter">
+          <img
+            src="{{ url_for('static', filename='uploads/HellenMainPage.png') }}"
+            alt="albert Web"
+            class="imageCaseStudycenter"
+          />
+        </div>
+        <div class="CaseStudyEdge">
+          <img
+            src="{{ url_for('static', filename='uploads/hellensideright.png') }}"
+            alt="albert Web"
+            class="imageCaseStudyEdges"
+          />
+        </div>
+      </div>
+      <div class="StudocaseDescriptionSection">
+        <div class="StudyCase-desc">
+          <h2 class="DescTitleStudyCase">Hallen Rocha</h2>
+          <p class="DescStudyCase">
+            Responsable for the UI/UX of this classic and modern mixture of
+            website, Hellen is a talented Architect from Brazil that needed a
+            website to showcase her vast portifolio though her career, Hellen
+            wanted her website clean with the minimum or reading, but focusing
+            on visual, pictures and desings
+            <br />
+            <br />
+          </p>
+        </div>
+        <div class="StudyCase-toolsused">
+          <h2 class="DescTitleStudyCase">Tools Used</h2>
+          <div class="DescStudyCase">
+            <div class="TollsIcons">
+              <h4>Python</h4>
+            </div>
+            <div class="TollsIcons">
+              <p>React</p>
+            </div>
+            <div class="TollsIcons">
+              <h4>CSS</h4>
+            </div>
+            <div class="TollsIcons">
+              <h4>Figma</h4>
+            </div>
+            <div class="TollsIcons">
+              <h4>Canva</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="StudycaseButton">
+        <a
+          href="https://www.figma.com/design/DJgWrK82cQOE0lUpErKXFC/Hellen-Rocha?node-id=0-1&p=f&t=UeS3lVzIArvDW69L-0"
+          target="_blank"
+        >
+          <button class="button w-button" type="button">Website Link</button></a
+        >
+      </div>
+      <footer class="Spacefooter">
+        <div class="flexLeftsideFooter">
+          <h2>Karinna Rocha</h2>
+          <h4>
+            Full Stack developer with the creative mind of designing inovated
+            and responsive softwares
+          </h4>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NurVIX</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body  class="fullpage">
+    <!-- NAV starts -->
+    <nav class="navspacecontainer">
+      <div class="navspace">
+        <div class="nav-line"></div>
+        <div>
+          <a href="https://www.linkedin.com/in/karinnarocha/" target="_blank"
+            >LI</a
+          >
+        </div>
+        <div>
+          <a href="https://github.com/karinnarocha" target="_blank">GH</a>
+        </div>
+        <div>
+          <a href="https://x.com/_nurvix" target="_blank">TW</a>
+        </div>
+        <div class="copyright">© | 2024</div>
+      </div>
+    </nav>
+    <!-- backgroung -->
+
+    <!-- index content -->
+    <section class="firstSection">
+      <div class="karinnaHeader">Karinna Rocha</div>
+      <div class="developerHeader">Software Developer</div>
+      <div class="Menu-link">
+          <a href="{{ url_for('aboutPage.aboutpage') }}">About</a>
+          <a href="{{ url_for('contactPage.contact') }}">Contact</a>
+      </div>
+    </section>
+    <!-- work content -->
+    <section class="ExpertiseSession ">
+      <div class="divisionExper hidden">
+        <div class="Squarespace">
+          <div class="expertisetitle">Back-end Dev</div>
+          <div class="expertisecontent">
+            Experience in Python backend Development using Flask and Django
+            Frameworks.
+          </div>
+        </div>
+        <div class="Squarespace">
+          <div class="expertisetitle">Front-end Design</div>
+          <div class="expertisecontent">
+            Passionate about design in general, experience on HTML, JavaScript, CSS and the passion with React.
+          </div>
+        </div>
+        <div class="Squarespace">
+          <div class="expertisetitle">Mobile Application</div>
+          <div class="expertisecontent">
+            Hybrid mobile apps are my way to go on Flutterflow framework or React
+            Native.
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- INTRO MENU starts -->
+    <div class="IntroProjectMenu">
+      <p class="IntroTitle">Here you will find some of the personal and clients projects that I created with each project containing its own case study.</p>
+    </div>
+    <!-- WORK MENU starts -->
+    <section class="WorkTitlesSession">
+      <div class="divisionWork">
+        <div class="myWork">
+          <div>My work</div>
+        </div>
+        <div class="vertical-line fadein"></div>
+        <div class="Worklist">
+          <a class="workTitle" href="#lulu">LULU&REMI</a><br />
+          <span>Web development & Marketing manager</span><br />
+          <a class="workTitle" href="#hellen">HELLEN</a><br />
+          <span>Web development</span><br />
+          <a class="workTitle" href="#albert">ALBERT</a><br />
+          <span>Web development & Marketing manager</span><br />
+          <a class="workTitle" href="#danielly">DANIELLY</a><br />
+          <span>Web Development</span><br />
+          <a class="workTitle" href="#nurvix">NURVIX</a><br />
+          <span>Web Development & Marketing manager</span><br />
+          <a class="workTitle" href="#aibeans">AIBEANS</a><br />
+          <span>Mobile Development</span><br />
+        </div>
+      </div>
+    </section>
+    <!-- WEBSITED TEMPLATES STARTS HERE -->
+      <section class="divisionStudycase">
+        <div class="divisionTemplatesLeft" id = "lulu">
+          <img 
+            src="{{ url_for('static', filename='uploads/Lulunremimainpage.png') }}"
+            alt="luluremi Web"
+            class="imageWebsiteLeft "
+          />
+      <div class="ProjectTitleandlink" >
+        <span class="project-title">Lulu&Remi</span>
+        <br />
+        <a href="{{ url_for('LulunremiStudyCase.LulunremiCaseStudy') }}" target="_blank">
+        <button class="button w-button" type="button">Case Study</button></a>
+      </div>
+    </div>
+        <div class="divisionTemplatesRight" id = "hellen">
+          <img 
+              src="{{ url_for('static', filename='uploads/HellenMainPage.png') }}"
+              alt="Mercy web"
+              class="imageWebsiteRight"
+            />
+          <div class="ProjectTitleandlink" >
+            <span class="project-title">Hellen Rocha</span>
+            <br />
+            <a href="{{ url_for('HellenStudyCase.HellenCaseStudy') }}" target="_blank">
+            <button class="button w-button" type="button">Case Study</button></a>
+          </div>
+        </div>
+        <div class="divisionTemplatesLeft" id = "albert">
+              <img 
+                src="{{ url_for('static', filename='uploads/Albertmainpage.png') }}"
+                alt="albert Web"
+                class="imageWebsiteLeft "
+              />
+          <div class="ProjectTitleandlink" >
+            <span class="project-title">Albert-Coaching</span>
+            <br />
+            <a href="{{ url_for('AlbertStudyCase.AlbertCaseStudy') }}" target="_blank">
+            <button class="button w-button" type="button">Case Study</button></a>
+          </div>
+        </div>
+        <div class="divisionTemplatesRight" id = "danielly">
+          <img 
+              src="{{ url_for('static', filename='uploads/Daniellymainpage.png') }}"
+              alt="Danielly web"
+              class="imageWebsiteRight"
+            />
+          <div class="ProjectTitleandlink" >
+            <span class="project-title">Danielly's fitness</span>
+            <br />
+            <a href="{{ url_for('DaniellyStudyCase.DaniellyCaseStudy') }}" target="_blank">
+            <button class="button w-button" type="button">Case Study</button></a>
+          </div>
+        </div>
+        <div class="divisionTemplatesLeft" id = "nurvix">
+          <img 
+            src="{{ url_for('static', filename='uploads/Nurvixmainpage.png') }}"
+            alt="NurVIX Page"
+            class="imageWebsiteLeft "
+          />
+          <div class="ProjectTitleandlink" >
+            <span class="project-title">NurVIX</span>
+            <br />
+            <a href="https://www.nurvix.live" target="_blank">
+            <button class="button w-button" type="button">Case Study</button></a>
+          </div>
+        </div>
+      </div>
+      </section>
+
+     
+  <!-- MOBILE APP TEMPLATE STARS HERE -->
+  
+    <!-- Footer -->
+    <footer class="Spacefooter">
+      <div class="flexLeftsideFooter">
+        <h2>Karinna Rocha</h2>
+        <h4>Full Stack developer with the creative mind of designing inovated and responsive softwares</h4>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script>
+
+  document.querySelectorAll('.workTitle').forEach(link => {
+    link.addEventListener('click', function(event){
+      event.preventDefault();
+
+      const targetId = this.getAttribute("href");
+      const targetSection = document.querySelector(targetId);
+
+      if (targetSection){
+        targetSection.scrollIntoView({ behavior:'smooth'})
+      }
+    });
+  });
+
+
+
+  // JAVASCRIPT FOR SCROLLING AND ANIMATION ON WEB IMAGES
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      } else {
+        entry.target.classList.remove("show");
+      }
+    });
+  });
+
+  const hiddenElements = document.querySelectorAll(".hidden");
+  hiddenElements.forEach((el) => observer.observe(el));
+
+  function typeWriter(element, text, delay = 50) {
+    let index = 0;
+    function addLetter() {
+      if (index < text.length) {
+        element.textContent += text.charAt(index);
+        index++;
+        setTimeout(() => requestAnimationFrame(addLetter), delay);
+      }
+    }
+    addLetter();
+  }
+
+  window.onload = function () {
+    const karinnaHeader = document.getElementById("karinnaHeader");
+    const developerHeader = document.getElementById("developerHeader");
+
+    developerHeader.textContent = "";
+    karinnaHeader.textContent = "";
+
+    // Start typing animations with different delays
+    typeWriter(karinnaHeader, "Karinna Rocha", 100);
+    typeWriter(developerHeader, "Software Developer", 100);
+  };
+
+
+
+</script>

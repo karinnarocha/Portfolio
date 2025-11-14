@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Work</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body class="fullpage">
+    <!-- NAV starts -->
+    <nav class="navspacecontainer">
+      <div class="navspace">
+        <div class="nav-line"></div>
+        <div>
+          <a href="{{ url_for('indexPage.home') }}">HOME</a>
+        </div>
+        <div class="copyright">© | 2024</div>
+      </div>
+    </nav>
+    <!-- BODY OF STUDY CASE starts -->
+    <section>
+      <div class="StudycaseTitleSection">
+        <h1 class="StudycaseTitle">Albert-Coaching</h1>
+        <h3 class="StudyCaseSubTitle">
+          This page contains the case study of Albert-Coaching Website which
+          includes the Project Overview, Tools Used and Live Links to the
+          official product.
+        </h3>
+      </div>
+      <div class="StudycaseButton">
+        <a href="wwww.albert-coaching.com" target="_blank">
+          <button class="button w-button" type="button">Website Link</button></a
+        >
+      </div>
+      <div class="CaseStudyContainer">
+        <div class="CaseStudyEdge">
+          <img
+            src="{{ url_for('static', filename='uploads/albertcoachingsidescreen.png') }}"
+            alt="albert Web"
+            class="imageCaseStudyEdges"
+          />
+        </div>
+        <div class="CaseStudyCenter">
+          <img
+            src="{{ url_for('static', filename='uploads/Albertmainpage.png') }}"
+            alt="albert Web"
+            class="imageCaseStudycenter"
+          />
+        </div>
+        <div class="CaseStudyEdge">
+          <img
+            src="{{ url_for('static', filename='uploads/Albertprogrampage.png') }}"
+            alt="albert Web"
+            class="imageCaseStudyEdges"
+          />
+        </div>
+      </div>
+      <div class="StudocaseDescriptionSection">
+        <div class="StudyCase-desc">
+          <h2 class="DescTitleStudyCase">Albert-Coaching</h2>
+          <p class="DescStudyCase">
+            Well known high performace body builder, with a large presence for
+            having over 20 thousand followers on social media , my client wanted
+            a website that would represent his personality with the goal to grow
+            your sucessful online coaching business, I designed the website with
+            some touches the client asked was looking for: Clean and Classy.
+            <br />
+            <br />
+            With the passion of building responsive websites from scratch, I
+            designed the UI and UX of this website focusing on the best
+            peformance user friendly and lower coast for the client, resulting a
+            higher memberships registration to his training business.
+          </p>
+        </div>
+        <div class="StudyCase-toolsused">
+          <h2 class="DescTitleStudyCase">Tools Used</h2>
+          <div class="DescStudyCase">
+            <div class="TollsIcons">
+              <h4>Python</h4>
+            </div>
+            <div class="TollsIcons">
+              <p>React</p>
+            </div>
+            <div class="TollsIcons">
+              <h4>CSS</h4>
+            </div>
+            <div class="TollsIcons">
+              <h4>SASS</h4>
+            </div>
+            <div class="TollsIcons">
+              <h4>Heroku</h4>
+            </div>
+            <div class="TollsIcons">
+              <h4>git CLI</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="StudycaseButton">
+        <a href="https://wwww.albert-coaching.com" target="_blank">
+          <button class="button w-button" type="button">Website Link</button></a
+        >
+      </div>
+      <footer class="Spacefooter">
+        <div class="flexLeftsideFooter">
+          <h2>Karinna Rocha</h2>
+          <h4>
+            Full Stack developer with the creative mind of designing inovated
+            and responsive softwares
+          </h4>
+        </div>
+        <div class="flexRightsideFooter">
+          <h2>Socials</h2>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

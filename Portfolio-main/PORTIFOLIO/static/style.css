@@ -1,0 +1,822 @@
+
+/* --------------- FONTS ------------- */
+
+
+@font-face {
+    font-family: 'Italiana';
+    src: url('fonts/Italiana-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'GreatVibes';
+    src: url('fonts/GreatVibes-Regular.ttf') format('truetype');
+}
+/* ------------ GLOBAL -------- */
+body{
+    font-family: Italiana;
+    color: rgb(105, 100, 100);
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    font-style: italic;
+}   
+a:visited {
+    color: inherit; 
+    text-decoration: none;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    margin: 0 auto; 
+}
+input[type="email"],
+input[type="text"],
+textarea {
+    border-radius: 15px; 
+    padding: 10px; 
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 15px; 
+    height: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+img{
+    height: auto;
+}
+
+/*-------------- NAV--------------*/
+
+
+.navspacecontainer{
+    height: 10%;
+    width: 100vw;
+    position: fixed;
+    z-index: 1000;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image:  linear-gradient(80deg, rgb(160, 211, 211), rgb(235, 194, 160));
+}
+.navspace{
+    display: flex;
+    align-items: center;
+    padding-right: 2%;
+    justify-content: flex-end;
+    gap: 40px;
+    color: #44413c;
+    font-size: 25px;
+}
+.nav-line {
+    width: 250px;
+    height: 2px;
+    background-color: rgb(63, 60, 56);
+    align-items: center;
+}
+
+
+/*------------- BODY------------*/
+
+
+.fullpage{
+    width: 100%;
+    background-image:  linear-gradient(80deg, rgb(160, 211, 211), rgb(235, 194, 160));
+}
+
+
+/* --------INDEX PAGE -----------*/
+
+.firstSection{
+    padding-top: 25%;
+    height: 60vh;
+}
+
+.karinnaHeader {
+    width: 100%;
+    text-shadow: rgb(228, 227, 226) 1px 0 10px;
+    text-align: center;
+    font-size: 130px;
+
+}
+.developerHeader{
+    width: 100%;
+    font-size: 40px;
+    text-shadow: rgb(228, 227, 226) 1px 0 5px;
+	padding-top: 5%;
+    text-align: center;
+    position: relative;
+}
+
+.Menu-link{
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: rgb(228, 227, 226) 1px 0 3px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    padding-top: 5%;
+    position: relative;
+}
+/*---------------CASE STUDIES-----------------*/
+
+.StudycaseTitleSection{
+    height: 55vh;
+    padding-top: 15%;
+
+}
+.StudycaseTitle{
+    text-align: center;
+    font-weight: 800;
+    color: rgb(248, 227, 227);
+    font-size: 130px;
+}
+.StudyCaseSubTitle{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-weight: 500;
+}
+.StudycaseButton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 12%;
+}
+.CaseStudyContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+.CaseStudyCenter{
+    width: 80vw;
+}
+.CaseStudyEdges{
+    width: 20vw;
+}
+/*--------------- WORK PAGE ---------------*/
+.ExpertiseSession{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    
+}
+.divisionExper{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    
+}
+.Squarespace{
+    border:  5px solid rgb(105, 100, 100);
+    background-color: #ffffff5f;
+    height: 320px;
+    width: 250px;
+    padding: 10px;
+
+}
+.experienceTitle{
+    width: 100%;
+    font-size: 75px;
+    color: rgb(105, 100, 100);
+    text-shadow: rgb(95, 93, 91) 2px 2px 8px;
+    padding-bottom: 10%;
+    text-align: center;
+}
+.WorkTitlesSession{
+    background-color: #fff;
+    height: 100vh;
+    position: relative;
+}
+.divisionWork{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.myWork{
+    width: 100%;
+    font-size: 70px;
+    color: rgb(105, 100, 100);
+    font-family: GreatVibes;
+    text-align: end;
+    align-self: center;
+    padding-right: 40px;
+}
+.workTitle{
+    width: 100%;
+    font-size: 80px;
+    color: rgb(105, 100, 100);
+
+}
+.expertisetitle{
+    padding: 30px 80px 30px 80px;
+    color: rgb(105, 100, 100);
+
+    font-weight: bold;
+    font-size: 25px;
+
+}
+.expertisecontent{
+    color: rgb(105, 100, 100);
+
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.IntroProjectMenu{
+    height: 50vh;
+    padding-left: 15%;
+    padding-right: 15%;
+    position: relative;
+}
+.IntroTitle{
+    text-align: center;
+    color: rgb(105, 100, 100);
+    
+    font-size: 30px;
+}
+.Worklist{
+    width: 100%;
+    color: rgb(136, 136, 136);
+    
+    font-size: 20px;
+    padding: 10px;
+    text-align: left;
+}
+.vertical-line {
+    width: 6px;
+    background-color: rgb(136, 136, 136);
+    margin: 0 20px;
+    height: 70vh;
+}
+
+.ProjectTitleandlink {
+    display: flex; /* Makes the content a flex container */
+    flex-direction: column; /* Aligns child elements vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Aligns text within the element */
+    margin: 0 auto; /* Centers the div itself within its container */
+    height: 80vh; /* Ensures the height covers its parent if needed */
+}
+
+.divisionStudycase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+.divisionTemplatesLeft{
+    display: flex;
+    height: 70vh;
+    align-items: center;
+}
+.divisionTemplatesRight{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100vh;
+    align-items: center;
+
+}
+.project-title {
+    font-size: 50px; 
+    
+    color: rgb(105, 100, 100);
+    text-align: center;
+  }
+  
+.project-details-right {
+    align-self: center;
+    
+    color: rgb(105, 100, 100);
+    font-size: 30px;
+    position: relative;
+    padding-right: 5rem;
+  }
+
+/*--------------- FOOTER ---------------*/
+
+.Spacefooter{
+    height: 40vh;
+    background-color: rgb(189, 176, 153);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+}
+.flexLeftsideFooter{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 35%;
+    padding-left: 15%;
+    justify-content: center;
+    color: rgb(105, 100, 100);
+}
+.flexRightsideFooter{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 25%;
+    justify-content: center;
+    align-items: end;
+    color: rgb(105, 100, 100);
+}
+  .project-details-left{
+    align-self: center;
+    color:#fff;
+    font-size: 30px;
+    position: relative;
+    text-align: left;
+    padding-left: 5rem;
+  }
+.projectSPECS{
+    text-align: center;
+    color:#fff;
+    font-size: 25px;
+}
+  
+.project-details a {
+color: #1e90ff; 
+text-decoration: none;
+}
+
+.project-details a:hover {
+text-decoration: underline; 
+}
+
+/*FOTOS STYLING*/
+.imagedisplay{
+    display: flex;
+    flex-direction: row;
+}
+.imageWebsiteRight{
+    width: 50vw;
+    right: 5%;
+    position: relative;
+}
+
+.imageWebsiteLeft{
+   width: 50vw;
+   left: 5%;
+   position: relative;
+}
+
+.imageCaseStudyEdges{
+    width: 100%;
+}
+.imageCaseStudycenter{
+    width: 300%;
+    left: -100%;
+    position: relative;
+}
+.StudocaseDescriptionSection{
+    margin-top: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.StudyCase-desc{
+    padding-bottom: 5%;
+}
+.StudyCase-toolsused{
+    margin-bottom: 15%;
+}
+.DescTitleStudyCase{
+    text-align: center;
+    color:#fff;
+    font-size: 35px;
+}
+.DescStudyCase{
+    color:#fff;
+    font-size: 25px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4%;
+}
+.TollsIcons{
+    background-color:rgb(136, 136, 136);
+    letter-spacing: 1px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*VIDEO STYLING*/
+.VideoAIBeans{
+    height: 700px;
+}
+.AppSession{
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    justify-content: space-evenly;
+}
+.AIBeansbox{
+    background-color:rgb(136, 136, 136);
+    opacity: 1;
+    border-radius: 70px;
+    height: 100%;
+    align-self: center;
+    padding-bottom: 35px;
+}
+
+/*---------------ABOUT PAGE -----------------*/
+
+.AboutImage{
+    position: relative;
+    width: 300%;
+    right: 90%;
+}
+.Abouttitle{  
+    padding-top: 10%;      
+    font-size: 200px;
+    font-family: "GreatVibes";
+    font-weight: 100;
+    position: relative;
+}
+.Aboutmainbody{
+    padding: 5% 15% 2% 15%;  
+}
+.AboutSubtitle {
+    font-size:40px;
+}
+.selfDescription{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+    width: 80%;
+}
+.pagedivision{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+@media (max-width: 750px) {
+.pagedivision{
+    display: flex;
+    flex-direction: column;
+}
+.AboutImage{
+    position: relative;
+    width: 100%;
+    right: 0;
+}
+}
+.skillsdescription{
+    width: 50%;
+    font-size: 25px;
+    font-weight: 600;
+    float: left;
+    display: block;
+    padding-left: 2%;
+}
+
+.subTitles{
+    font-size:40px;
+}
+.divSubTitles{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    text-align: left;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.buttonbox{
+    padding-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30%;
+}
+.button {
+    background-color: #fff ;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    font-family: Italiana;
+    font-size: 24px;
+    font-weight: 400;
+    transition: background-color 0.3s;
+}
+.w-button {
+    color: #44413c;
+    border: 0;
+    padding: 9px 15px;
+}
+.button:hover{
+    background-color: #44413c;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/*-------------CONTACT ME--------------*/
+.ContactTitle {
+    display: flex;
+    justify-content: left;
+    font-size: 150px;
+    font-family: GreatVibes;
+    padding-top: 10%;
+    padding-bottom: 8%;
+    padding-left: 15%;
+    color: rgb(63, 60, 56);
+}
+.ContactContent{
+    width: 100%;
+    font-size: 20px;
+    padding-bottom: 80px;
+    color: rgb(63, 60, 56);
+    text-align: center;
+}
+.contactForm {
+    font-size: 30px;
+    width: 500px;
+    color: rgb(63, 60, 56);
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; /* Center the form horizontally */
+}
+.messagebox{
+    height: 200px;
+}
+
+/*--------------BACKGROUND INDEX--------------*/
+ 
+#up { 
+    height: 90vh;
+    width: 90vh;
+    border-radius: 50%;
+    background-image:  linear-gradient(80deg, rgb(177, 111, 155), rgb(161, 139, 114));
+    filter: blur(80px);
+    animation: up 40s infinite;
+}
+#down {
+    right: 0;
+    height: 90vh;
+    width: 90vh;
+    border-radius: 50%;
+    background-image:  linear-gradient(80deg, rgb(233, 133, 129), rgb(151, 197, 178) );
+    filter: blur(80px);
+    animation: down 40s infinite;
+}
+#right {
+    height: 90vh;
+    width: 90vh;
+    border-radius: 50%;
+    background-image:  linear-gradient(80deg, #c488cc, rgb(94, 199, 202) );
+    filter: blur(80px);
+    animation: right 50s infinite;
+}
+#left {
+    right: 0; 
+    align-self: flex-end;
+    height: 90vh;
+    width: 100vh;
+    border-radius: 50%;
+    background-image:  linear-gradient(80deg, rgb(224, 231, 127), rgb(52, 147, 190) );
+    filter: blur(80px);
+    animation: left 40s infinite;
+}
+#up, #down, #right, #left {
+    animation-duration: 30s; /* Shortened duration */
+    animation-timing-function: ease-in-out; /* Smoother animation */
+    filter: blur(45px);
+    will-change: transform;
+    position: absolute;
+    }
+@keyframes down {
+    0%, 100% {
+        top: -100%;
+    }
+    70% {
+        top: 90%;
+    }
+}
+
+@keyframes up {
+    0%, 100%{
+        bottom: 0%;
+    }
+    70%{
+        bottom: 100%;
+    }
+}
+@keyframes right {
+    0%, 100%{
+        right: -100%;
+    }
+    70%{
+        right:700px;
+    }
+}
+
+@keyframes left {
+    0%, 100%{
+        left: -100%;
+    }
+    70%{
+        left:700px;
+    }
+}
+body {
+    position: relative;
+    width: 100%;
+    margin: 0;
+
+}
+
+
+/*---------------ANIMATIONS -----------*/
+
+/*-----KEYFRAMES ------*/
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+  }
+
+@keyframes fadeIn {
+from {
+    opacity: 0;
+    transform: scaleY(0);
+}
+to {
+    opacity: 1;
+    transform: scaleY(1);
+}
+}
+  
+/*----- typing animation ------*/
+.typing-animation {
+    overflow: hidden; 
+    border-right: .15em solid black; 
+    white-space: nowrap;
+    animation: typing 3s steps(30, end), blink-caret .5s step-end infinite;
+  }
+
+/* Initial state for elements to ON JAVASCRIPT */
+.hidden {
+    opacity: 0;
+    transition: all 3s;
+    filter: blur(5px);
+}
+.hiddenIMAGES-right {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 3s;
+  }
+.show {
+    opacity: 1 !important;
+    filter: blur(0) !important;
+    transform: translateX(0) !important;
+  }
+/* Initial state for elements to ON JAVASCRIPT images*/
+.hiddenIMAGES {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 3s  ;
+    }
+
+.fadein {
+    animation: fadein 3s ease-in-out forwards;
+}
+
+/* WORK */
+.slideRight {
+    animation: slideInRight 2s forwards;
+}
+.animated-textOpposite {
+    animation: slideInOpposite 5s forwards;
+}
+/* WORK ANIMATION, SCROW FROM THE SIDES  */
+.imageOffScreen {
+    opacity: 0;
+    transform: translateY(50px); 
+    transition: all 0.5s ease-out;
+}
+
+.imageInView {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.animationfading {
+    animation: FadeIn 1s ease-in-out forwards;
+}
+.animated-textUp{
+    display: inline-block;
+    white-space: nowrap;
+    animation: slideUp 1s ease-in-out forwards;
+}
+   
+
+
+/* Animation definitions */
+
+
+
+/*--------------MEDIA RESIZING --------------*/
+
+
+@media (max-width: 480px) {
+    .navspace {
+        font-size: 15px;
+    }
+    .nav-line {
+        width: 100px;}
+
+    .karinnaHeader{
+        top: 180px;
+        font-size:  80px;
+        position: relative;
+    }
+    .firstSection{
+        height: 100vh;
+    }
+    .developerHeader{
+        top: 180px;
+        position: relative;
+    }
+    .Menu-link{
+        top: 230px;
+    }
+    .divisionExper{
+        flex-direction: column;
+        height: 100vh;
+        padding-top: 15%;
+    }
+    .divisionStudycase{
+        padding-top: 10%;
+    }
+    .IntroProjectMenu{
+        margin-top: 60%;
+    }
+    .myWork{
+        display: none;
+    }
+    .divisionTemplatesLeft,
+    .divisionTemplatesRight{
+        flex-direction: column;
+    }
+    .imageWebsiteRight,
+    .imageWebsiteLeft{
+    height: 40vh;
+    width: 90vw;
+    }
+    .StudycaseTitle{
+        font-size:  80px;
+        margin-top: 15%;
+    }
+    .StudyCaseSubTitle{
+        font-size: 25;
+    }
+    .imageCaseStudycenter{
+        width: 100%;
+        left: 15%;
+        position: relative;
+    }
+    .CaseStudyContainer{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .StudocaseDescriptionSection{
+        margin-top: 15%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+  }

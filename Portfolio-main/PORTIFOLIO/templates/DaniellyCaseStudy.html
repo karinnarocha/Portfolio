@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Work</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body class="fullpage">
+    <!-- NAV starts -->
+    <nav class="navspacecontainer">
+      <div class="navspace">
+        <div class="nav-line"></div>
+        <div>
+          <a href="{{ url_for('indexPage.home') }}">HOME</a>
+        </div>
+        <div class="copyright">© | 2024</div>
+      </div>
+    </nav>
+    <!-- BODY OF STUDY CASE starts -->
+    <section>
+      <div class="StudycaseTitleSection">
+        <h1 class="StudycaseTitle">Danielly's Fitness</h1>
+        <h3 class="StudyCaseSubTitle">
+          This page contains the case study of Danielly's Fitness Website which
+          includes the Project Overview, Tools Used and Live Links to the
+          official product.
+        </h3>
+      </div>
+      <div class="StudycaseButton">
+        <a href="https://www.daniellysfitness.com" target="_blank">
+          <button class="button w-button" type="button">Website Link</button></a
+        >
+      </div>
+      <div class="CaseStudyContainer">
+        <div class="CaseStudyEdge">
+          <img
+            src="{{ url_for('static', filename='uploads/daniellysideleft.png') }}"
+            alt="albert Web"
+            class="imageCaseStudyEdges"
+          />
+        </div>
+        <div class="CaseStudyCenter">
+          <img
+            src="{{ url_for('static', filename='uploads/Daniellymainpage.png') }}"
+            alt="albert Web"
+            class="imageCaseStudycenter"
+          />
+        </div>
+        <div class="CaseStudyEdge">
+          <img
+            src="{{ url_for('static', filename='uploads/daniellysidescreen.png') }}"
+            alt="albert Web"
+            class="imageCaseStudyEdges"
+          />
+        </div>
+      </div>
+      <div class="StudocaseDescriptionSection">
+        <div class="StudyCase-desc">
+          <h2 class="DescTitleStudyCase">Danielly's Fitness</h2>
+          <p class="DescStudyCase">
+            Bringing a vast of knowledge and certifications based on Sports
+            medicine and providing many types of programs that you improve life
+            quality, This website was one of the greatest UI's I did so far,
+            partnering with a skilled team responsable for the development of
+            the backend of the website, Danielly's Fitness has been nominated
+            and voted in the TOP THREE TRAINERS IN SONOMA in 2018, 2019, and
+            2023 and won FIRST PLACE in the 2020 and 2021 People’s Choice
+            Awards.
+            <br />
+            <br />
+            Danielly wanted to bring this modern style with the mindfull
+            directing the website into a fitness and wellness enviroment just
+            like her program offering in her site, and the outcome was amazing.
+          </p>
+        </div>
+        <div class="StudyCase-toolsused">
+          <h2 class="DescTitleStudyCase">Tools Used</h2>
+          <div class="DescStudyCase">
+            <div class="TollsIcons">
+              <h4>PHP</h4>
+            </div>
+            <div class="TollsIcons">
+              <p>Wordpress</p>
+            </div>
+            <div class="TollsIcons">
+              <h4>HTML</h4>
+            </div>
+            <div class="TollsIcons">
+              <h4>CSS</h4>
+            </div>
+            <div class="TollsIcons">
+              <h4>JavaScript</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="StudycaseButton">
+        <a href="https://www.daniellysfitness.com" target="_blank">
+          <button class="button w-button" type="button">Website Link</button></a
+        >
+      </div>
+      <footer class="Spacefooter">
+        <div class="flexLeftsideFooter">
+          <h2>Karinna Rocha</h2>
+          <h4>
+            Full Stack developer with the creative mind of designing inovated
+            and responsive softwares
+          </h4>
+        </div>
+        <div class="flexRightsideFooter">
+          <h2>Socials</h2>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
